@@ -1,0 +1,233 @@
+/* ================= CONTACT HERO ================= */
+.al-contact-hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  overflow: hidden;
+  background: #0b3d33;
+ font-family: "Montserrat", sans-serif;
+}
+
+/* BACKGROUND IMAGE */
+.al-contact-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.al-contact-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* OVERLAY */
+.al-contact-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 61, 51, 0.8),
+    rgba(11, 61, 51, 0.55)
+  );
+  z-index: 2;
+}
+
+/* CONTENT */
+.al-contact-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.al-contact-content h1 {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.al-contact-content p {
+  font-size: 16px;
+  color: #f1e8da;
+  max-width: 600px;
+}
+
+/* WAVE */
+.al-contact-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  line-height: 0;
+}
+
+.al-contact-wave svg {
+  width: 100%;
+  height: 120px;
+  display: block;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .al-contact-hero {
+    height: 60vh;
+  }
+
+  .al-contact-wave svg {
+    height: 90px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .al-contact-hero {
+    height: 52vh;
+    min-height: 340px;
+  }
+
+  .al-contact-content h1 {
+    font-size: 32px;
+    letter-spacing: 1.5px;
+  }
+
+  .al-contact-content p {
+    font-size: 14px;
+  }
+
+  .al-contact-wave svg {
+    height: 70px;
+  }
+}
+
+
+/* ================= CONTACT SECTION ================= */
+.al-contact-section {
+  background: #faf7f2;
+   font-family: "Montserrat", sans-serif;
+}
+
+/* LEFT CARD */
+.al-contact-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.al-contact-card h3 {
+  font-weight: 700;
+  color: #0b3d33;
+}
+
+.al-subtext {
+  color: #6f8f88;
+  font-size: 15px;
+}
+
+/* FORM */
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b3d33;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #d9e6e2;
+  padding: 12px 14px;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  border-color: #0b3d33;
+  box-shadow: 0 0 0 2px rgba(11, 61, 51, 0.15);
+}
+
+/* BUTTON */
+.al-btn-primary {
+  background: #0b3d33;
+  color: #ffffff;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+}
+
+.al-btn-primary:hover {
+  background: #095c4b;
+  color: #ffffff;
+}
+
+/* INFO CARDS */
+.al-info-card {
+  display: flex;
+  gap: 16px;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.al-info-card h6 {
+  margin-bottom: 4px;
+  font-weight: 700;
+  color: #0b3d33;
+}
+
+.al-info-card p {
+  font-size: 14px;
+  color: #6f8f88;
+  margin: 0;
+}
+
+/* ICON */
+.al-icon {
+  min-width: 44px;
+  height: 44px;
+  background: #0b3d33;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* SOCIALS */
+.al-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.al-socials a {
+  width: 42px;
+  height: 42px;
+  background: #e7f1ee;
+  color: #0b3d33;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .al-contact-card {
+    padding: 24px;
+  }
+}
